@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8F6477EF-CF23-40B7-A77C-4C0EE1D1F539}</ProjectGuid>
+    <RootNamespace>AutoDebug</RootNamespace>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>false</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <GenerateManifest>false</GenerateManifest>
+    <PostBuildEventUseInBuild>true</PostBuildEventUseInBuild>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BasicRuntimeChecks>Default</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <MinimalRebuild>false</MinimalRebuild>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <AdditionalDependencies>PantherSDKLib.lib;LibFT4222.lib;ftd2xx.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <IgnoreSpecificDefaultLibraries>LIBCMT.lib</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <ProjectReference>
+      <LinkLibraryDependencies>true</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <Optimization>Disabled</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalOptions>/LTCG %(AdditionalOptions)</AdditionalOptions>
+      <IgnoreAllDefaultLibraries>false</IgnoreAllDefaultLibraries>
+      <IgnoreSpecificDefaultLibraries>uafxcw.lib;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <PostBuildEvent>
+      <Command>
+      </Command>
+    </PostBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\AutoDebug.ico" />
+    <None Include="res\AutoDebug.rc2" />
+    <None Include="res\car_48X48.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoDebug.h" />
+    <ClInclude Include="AutoDebugDlg.h" />
+    <ClInclude Include="I2C\ftd2xx.h" />
+    <ClInclude Include="GAIABRD.h" />
+    <ClInclude Include="I2C\i2c.h" />
+    <ClInclude Include="I2C\LibFT4222.h" />
+    <ClInclude Include="MAXIMSERDES.h" />
+    <ClInclude Include="OV480ISP.h" />
+    <ClInclude Include="OV480\ov480.h" />
+    <ClInclude Include="OV480\OV480sup.h" />
+    <ClInclude Include="OV490ISP.h" />
+    <ClInclude Include="OV490\ov490_spi.h" />
+    <ClInclude Include="OV490\ov490_spi_operation.h" />
+    <ClInclude Include="OV491ISP.h" />
+    <ClInclude Include="OV491\OV491_func.h" />
+    <ClInclude Include="OV494ISP.h" />
+    <ClInclude Include="OV494\OV494.h" />
+    <ClInclude Include="OV494\OV494BurnFWPro.h" />
+    <ClInclude Include="OV495ISP.h" />
+    <ClInclude Include="OV495\LIB_OV495.h" />
+    <ClInclude Include="OV495\LIB_SPI.h" />
+    <ClInclude Include="OV495\ov495_spi_operation.h" />
+    <ClInclude Include="OV496ISP.h" />
+    <ClInclude Include="OV496\OV496.h" />
+    <ClInclude Include="OV496\OV496BurnFW1Line.h" />
+    <ClInclude Include="I2C\PantherSDK.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="TISERDES.h" />
+    <ClInclude Include="X1FSOC.h" />
+    <ClInclude Include="X1F\X1F.h" />
+    <ClInclude Include="X1F\X1F_BurnFWPro.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoDebug.cpp" />
+    <ClCompile Include="AutoDebugDlg.cpp" />
+    <ClCompile Include="GAIABRD.cpp" />
+    <ClCompile Include="I2C\i2c.cpp" />
+    <ClCompile Include="MAXIMSERDES.cpp" />
+    <ClCompile Include="OV480ISP.cpp" />
+    <ClCompile Include="OV480\ov480sup.cpp" />
+    <ClCompile Include="OV490ISP.cpp" />
+    <ClCompile Include="OV490\ov490_sccb_sf.cpp" />
+    <ClCompile Include="OV490\ov490_sf_Pm25LV512_setting.cpp" />
+    <ClCompile Include="OV490\ov490_spi_operation.cpp" />
+    <ClCompile Include="OV491ISP.cpp" />
+    <ClCompile Include="OV491\OV491_func.cpp" />
+    <ClCompile Include="OV494ISP.cpp" />
+    <ClCompile Include="OV494\OV494.cpp" />
+    <ClCompile Include="OV495ISP.cpp" />
+    <ClCompile Include="OV495\LIB_OV495.cpp" />
+    <ClCompile Include="OV495\LIB_SPI.cpp" />
+    <ClCompile Include="OV495\ov495_spi_operation.cpp" />
+    <ClCompile Include="OV496ISP.cpp" />
+    <ClCompile Include="OV496\OV496.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="TISERDES.cpp" />
+    <ClCompile Include="X1FSOC.cpp" />
+    <ClCompile Include="X1F\X1F.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AutoDebug.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="I2C\ftd2xx.lib" />
+    <Library Include="I2C\LibFT4222.lib" />
+    <Library Include="I2C\PantherSDKLib.lib" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="AutoDebug.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

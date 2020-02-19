@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Library Files">
+      <UniqueIdentifier>{806cc992-4e23-4ba8-b119-258ef9515d20}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ov490">
+      <UniqueIdentifier>{038e953f-3cd0-46d2-855f-960a5e8d6638}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ov494">
+      <UniqueIdentifier>{7d5952a5-b0e1-46d3-933d-97275b0024d9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="TabCtrl">
+      <UniqueIdentifier>{5cd3f0f0-c1a6-4ddf-a67f-7b86183d7dc9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ov495">
+      <UniqueIdentifier>{0163d9fc-599f-494f-868b-8dbcbb3443ac}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ov496">
+      <UniqueIdentifier>{c44d7209-1e09-477c-942f-6ff9e925846f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ov480">
+      <UniqueIdentifier>{29f865bb-f1cd-4f4b-8c9d-873836b2c7d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DEBUG">
+      <UniqueIdentifier>{8a795809-16e3-4dfb-afca-05fa99dd5347}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="res\AutoDebug.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\car_48X48.ico">
+      <Filter>Resource Files</Filter>
+    </None>
+    <None Include="res\AutoDebug.rc2">
+      <Filter>Resource Files</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AutoDebug.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="AutoDebugDlg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="TISERDES.h">
+      <Filter>TabCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="MAXIMSERDES.h">
+      <Filter>TabCtrl</Filter>
+    </ClInclude>
+    <ClInclude Include="OV490ISP.h">
+      <Filter>ov490</Filter>
+    </ClInclude>
+    <ClInclude Include="OV494ISP.h">
+      <Filter>ov494</Filter>
+    </ClInclude>
+    <ClInclude Include="OV495ISP.h">
+      <Filter>ov495</Filter>
+    </ClInclude>
+    <ClInclude Include="OV496ISP.h">
+      <Filter>ov496</Filter>
+    </ClInclude>
+    <ClInclude Include="OV480ISP.h">
+      <Filter>ov480</Filter>
+    </ClInclude>
+    <ClInclude Include="GAIABRD.h">
+      <Filter>DEBUG</Filter>
+    </ClInclude>
+    <ClInclude Include="OV480\ov480.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV480\OV480sup.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV496\OV496.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV496\OV496BurnFW1Line.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV490\ov490_spi.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV490\ov490_spi_operation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV494\OV494.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV494\OV494BurnFWPro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV495\LIB_OV495.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV495\LIB_SPI.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV495\ov495_spi_operation.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV491ISP.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="OV491\OV491_func.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="I2C\ftd2xx.h">
+      <Filter>Library Files</Filter>
+    </ClInclude>
+    <ClInclude Include="I2C\i2c.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="I2C\LibFT4222.h">
+      <Filter>Library Files</Filter>
+    </ClInclude>
+    <ClInclude Include="I2C\PantherSDK.h">
+      <Filter>Library Files</Filter>
+    </ClInclude>
+    <ClInclude Include="X1FSOC.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="X1F\X1F_BurnFWPro.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="X1F\X1F.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="AutoDebug.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="AutoDebugDlg.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="MAXIMSERDES.cpp">
+      <Filter>TabCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="TISERDES.cpp">
+      <Filter>TabCtrl</Filter>
+    </ClCompile>
+    <ClCompile Include="OV490ISP.cpp">
+      <Filter>ov490</Filter>
+    </ClCompile>
+    <ClCompile Include="OV494ISP.cpp">
+      <Filter>ov494</Filter>
+    </ClCompile>
+    <ClCompile Include="OV495ISP.cpp">
+      <Filter>ov495</Filter>
+    </ClCompile>
+    <ClCompile Include="OV496ISP.cpp">
+      <Filter>ov496</Filter>
+    </ClCompile>
+    <ClCompile Include="OV480ISP.cpp">
+      <Filter>ov480</Filter>
+    </ClCompile>
+    <ClCompile Include="GAIABRD.cpp">
+      <Filter>DEBUG</Filter>
+    </ClCompile>
+    <ClCompile Include="OV480\ov480sup.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV496\OV496.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV490\ov490_sccb_sf.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV490\ov490_sf_Pm25LV512_setting.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV490\ov490_spi_operation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV494\OV494.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV495\LIB_OV495.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV495\LIB_SPI.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV495\ov495_spi_operation.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV491ISP.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="OV491\OV491_func.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="I2C\i2c.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X1FSOC.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="X1F\X1F.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="AutoDebug.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Library Include="I2C\ftd2xx.lib">
+      <Filter>Library Files</Filter>
+    </Library>
+    <Library Include="I2C\LibFT4222.lib">
+      <Filter>Library Files</Filter>
+    </Library>
+    <Library Include="I2C\PantherSDKLib.lib">
+      <Filter>Library Files</Filter>
+    </Library>
+  </ItemGroup>
+</Project>
